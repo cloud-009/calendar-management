@@ -36,7 +36,7 @@ export class CalendarComponent implements OnInit, AfterViewInit, OnDestroy {
 
   constructor() { }
 
-  onDateSelected(date: any) {
+  onDateSelected(date: Date) {
     console.log(date)
   }
 

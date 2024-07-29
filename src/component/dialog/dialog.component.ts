@@ -14,7 +14,7 @@ import { AppointmentService } from 'src/services/appointment.service';
 })
 export class DialogComponent implements OnInit, OnDestroy {
 
-  currentDateSelected: any;
+  currentDateSelected: Date | null = null;
   private _appointmentList: Array<AppointmentListInterface> = [];
   private _service: AppointmentService = inject(AppointmentService);
 
