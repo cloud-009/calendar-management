@@ -1,14 +1,9 @@
 {
   "appointment": [
     {
-      "id": "601",
-      "appointmentName": "Medical Checkup",
-      "appointmentDate": "04/07/2024"
-    },
-    {
       "id": "348",
       "appointmentName": "Driving License",
-      "appointmentDate": "02/07/2024"
+      "appointmentDate": "03/07/2024"
     },
     {
       "id": "502",
@@ -19,6 +14,16 @@
       "id": "751",
       "appointmentName": "Another Medical Checkup",
       "appointmentDate": "10/07/2024"
+    },
+    {
+      "id": "986",
+      "appointmentName": "Test Calendar",
+      "appointmentDate": "09/07/2024"
+    },
+    {
+      "id": "257",
+      "appointmentName": "Choosing a date",
+      "appointmentDate": "22/07/2024"
     }
   ]
 }
