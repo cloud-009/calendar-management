@@ -1,0 +1,6 @@
+<div class="calendar-container">
+    <mat-card class="demo-inline-calendar-card">
+        <mat-calendar #calendar [(selected)]="currentDateSelected" (selectedChange)="onDateSelected($event)">
+        </mat-calendar>
+    </mat-card>
+</div>

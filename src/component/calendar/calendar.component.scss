@@ -1,0 +1,55 @@
+.custom-button-element {
+    margin-right: 5rem;
+    padding: 10px 20px;
+    background: transparent;
+    border: 1px solid #3d915b;
+    outline: none;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-radius: 20px;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.18);
+    cursor: pointer;
+
+    &:last-child {
+        border: 1px solid #f44336;
+        background-color: #f44336;
+    }
+
+    &:active {
+        transform: scale(1.1);
+    }
+}
+
+:host ::ng-deep {
+
+    button.mat-calendar-previous-button,
+    button.mat-calendar-next-button {
+        color: white !important;
+    }
+
+    td {
+        padding-top: 3% !important;
+        padding-bottom: 2% !important;
+    }
+
+    .mat-calendar-body-selected {
+        background-color: transparent;
+        border: 1px solid white;
+    }
+
+    .mat-calendar-body-cell:not(.mat-calendar-body-disabled):hover>.mat-calendar-body-cell-content:not(.mat-calendar-body-selected):not(.mat-calendar-body-comparison-identical) {
+        background-color: transparent;
+        border: 1px solid white;
+    }
+
+    .appointment-name {
+        text-align: center;
+        position: relative;
+        top: -20px;
+        text-transform: capitalize;
+        color: white;
+        font-weight: 600;
+    }
+}

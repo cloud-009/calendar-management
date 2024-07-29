@@ -1,0 +1,44 @@
+<!-- add appointment -->
+<ng-container *ngIf="data.message == 'add-appointment'">
+    <div class="form-container" [formGroup]="appointmentForm">
+        <!-- Patient Name -->
+        <mat-form-field color="primary" appearance="outline">
+            <mat-label>Name</mat-label>
+            <input type="text" matInput formControlName="appointmentName">
+            <mat-error>Required Field</mat-error>
+        </mat-form-field>
+
+        <mat-form-field color="primary" appearance="outline">
+            <mat-label>Choose a date</mat-label>
+            <input matInput [matDatepicker]="picker" formControlName="appointmentDate">
+            <mat-hint style="color: white;">MM/DD/YYYY</mat-hint>
+            <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+
+        <button mat-raised-button color="primary" (click)="addAppointment()" [disabled]="appointmentForm.invalid">Add
+            Appointment</button>
+    </div>
+</ng-container>
+
+<!-- delete appointment -->
+<ng-container *ngIf="data.message == 'delete-appointment'">
+    <div class="form-container" [formGroup]="appointmentForm">
+        <!-- Patient Name -->
+        <mat-form-field color="primary" appearance="outline">
+            <mat-label>Name</mat-label>
+            <input type="text" matInput formControlName="appointmentName">
+            <mat-error>Required Field</mat-error>
+        </mat-form-field>
+
+        <mat-form-field color="primary" appearance="outline">
+            <mat-label>Choose a date</mat-label>
+            <input matInput [matDatepicker]="picker" formControlName="appointmentDate">
+            <mat-hint style="color: white;">MM/DD/YYYY</mat-hint>
+            <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+
+        <button mat-raised-button color="warn" (click)="deleteAppointment(data.id)">Delete Appointment</button>
+    </div>
+</ng-container>
