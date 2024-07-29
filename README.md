@@ -3,10 +3,12 @@
 
 ## How to run this appplication ?
 
-1. Please clone the respository using `git clone `.
+1. Please clone the respository using `git clone https://github.com/cloud-009/calendar-management.git`.
 2. Install the dependencies using `npm install`.
 3. Run the angular application using `ng serve` or if you want to mention port number then `ng serve --port 4321`.
 You can change the `4321` with any port number you'd like.
+4. Install the `json-server` globally as it is the dependency for this application to serve the static json file.
+5. In your terminal run `npm install -g json-server`.
 4. Then run the `json-server` which acts as a fake-backend for this application. In your terminal type `json-server appointment.json --port 3210`. Please do not change this port as the same port is being used in the application.
 5. If you do want to change the port number for `json-server`, change the port number in terminal as well as this file `appointment.service.ts`.
 
